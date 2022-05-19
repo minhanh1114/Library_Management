@@ -96,7 +96,7 @@ namespace QLTV_GUI
             }
 
         }
-
+        // tắt hiển thị component
         void UnReadonly()
         {
 
@@ -119,6 +119,7 @@ namespace QLTV_GUI
             glued_TheLoai.Properties.ReadOnly = true;
             glued_TinhTrang.Properties.ReadOnly = true;
         }
+        // click show lên text
         private void bandedGridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
             int a = bandedGridView1.GetFocusedDataSourceRowIndex();
@@ -678,5 +679,10 @@ namespace QLTV_GUI
             }
         }
         #endregion
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

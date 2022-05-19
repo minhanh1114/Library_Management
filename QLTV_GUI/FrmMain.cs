@@ -372,7 +372,22 @@ namespace QLTV_GUI
 
         private void btnQuanLiAdmin_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            XtraMessageBox.Show("Chưa có dữ liệu!", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Form frm = this.KiemTraTonTai(typeof(frmADMIN));
+            if (frm != null)
+                frm.Activate();
+            else
+            {
+                SplashScreenManager.ShowDefaultWaitForm();
+                frmADMIN f = new frmADMIN
+                {
+                    MdiParent = this
+                };
+                f.Show();
+                SplashScreenManager.CloseDefaultSplashScreen();
+            }
+            //frmADMIN frameadmin = new frmADMIN();
+            //frameadmin.ShowDialog();
+            //XtraMessageBox.Show("Chưa có dữ liệu!", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         #endregion
         #region Event_Closing
@@ -382,5 +397,10 @@ namespace QLTV_GUI
                 Application.Exit();
         }
         #endregion
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
     }
 }

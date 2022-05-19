@@ -1,0 +1,15 @@
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\bin\Debug\QLTV_DAO.dll.config
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\bin\Debug\QLTV_DAO.dll
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\bin\Debug\QLTV_DAO.pdb
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\bin\Debug\EntityFramework.dll
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\bin\Debug\QLTV_DTO.dll
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\bin\Debug\QLTV_DTO.pdb
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\bin\Debug\QLTV_DTO.dll.config
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\bin\Debug\EntityFramework.xml
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\obj\Debug\QLTV_DAO.csproj.AssemblyReference.cache
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\obj\Debug\QLTV_DAO.csproj.CoreCompileInputs.cache
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\obj\Debug\QLTV_DAO.csproj.CopyComplete
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\obj\Debug\QLTV_DAO.dll
+C:\Users\Truong Tuan\Documents\Winform\Library_Management\QLTV_DAO\obj\Debug\QLTV_DAO.pdb

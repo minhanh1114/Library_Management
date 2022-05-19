@@ -44,11 +44,14 @@ namespace QLTV_GUI
             ListSDT();
             try
             {
+                // lấy đọc giả last
                 TTDOCGIADTO ttdg = TTDOCGIABUS.Instance.GetListDocGiaInfo()[TTDOCGIABUS.Instance.GetListDocGiaInfo().Count-1];
                 IdLast = ttdg.MaDocGia;
             }
-            catch { IdLast = ""; }
-            txbMaDocGia.Text = HelpGUI.AutoIncreaseID.Load_AutoIncreaseID("DG",IdLast, 6);
+            catch {
+                IdLast = "";
+            }
+            txbMaDocGia.Text = HelpGUI.AutoIncreaseID.Load_AutoIncreaseID("DA",IdLast, 6);
         }
         void Load_LoaiDG()
         {
