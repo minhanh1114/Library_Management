@@ -58,6 +58,7 @@ namespace QLTV_GUI
             ListBDDocGia.DataSource = listdg.ToList();
             gridControl.DataSource = ListBDDocGia;
         }
+        // load dữ liệu lên text bo
         void Binding_DocGia()
         {
             try
@@ -460,16 +461,16 @@ namespace QLTV_GUI
             }
             bandedGridView.Focus();
         }
-        private void bandedGridView_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+       private void bandedGridView_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
-            if (lo_btnHuy.Visibility == DevExpress.XtraLayout.Utils.LayoutVisibility.Always)
+         if (lo_btnHuy.Visibility == DevExpress.XtraLayout.Utils.LayoutVisibility.Always)
             {
-                FormatBD_TTDocGia();
+               FormatBD_TTDocGia();
                 dxErrorProvider1.SetError(txbEmail, null);
-                dxErrorProvider1.SetError(txbSDT, null);
-            }
-        }
-        //private void bandGridview_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+              dxErrorProvider1.SetError(txbSDT, null);
+          }
+}
+        ////private void bandGridview_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         //{
         //    Thread.Sleep(100);
         //    //int a = bandedGridView.GetFocusedDataSourceRowIndex();
@@ -701,5 +702,10 @@ namespace QLTV_GUI
             HelpGUI.KiemTraDieuKien.NhapSo(e);
         }
         #endregion
+
+        private void gridControl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

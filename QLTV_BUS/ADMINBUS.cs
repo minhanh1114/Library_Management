@@ -22,5 +22,13 @@ namespace QLTV_BUS
         {
             return ADMINDAO.Instance.GetInfoAdmin(idaccount);
         }
+        public void updateInfoadmin(string MaAD, string idtaikhoan, string TenAD, string DiaChi, string email, DateTime NgaySinh, string phone)
+        {
+            ADMINDAO.Instance.UpdateInfoadmin(MaAD, idtaikhoan, TenAD, DiaChi, email,NgaySinh, phone);
+        }
+        public void RemoveInfoAD(string MaAD)
+        {
+            ADMINDAO.Instance.RemoveInfoadmin(MaAD);
+        }
     }
 }

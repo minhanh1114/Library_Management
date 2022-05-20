@@ -43,5 +43,29 @@ namespace QLTV_DAO
             }
             return listad;
         }
+        public void UpdateInfoadmin(string MaAD,string idtaikhoan, string TenAD, string DiaChi, string email, DateTime NgaySinh, string phone)
+        {
+            using (QuanLyThuVienEntities db = new QuanLyThuVienEntities())
+            {
+                ADMIN dg = db.ADMINs.Find(MaAD);
+                dg.IDAccount = idtaikhoan;
+                dg.NameAdmin = TenAD;
+                dg.Birthday = NgaySinh;
+                dg.Address = DiaChi;
+                dg.Email = email;
+                dg.NumberPhone = phone;
+                db.SaveChanges();
+            }
+        }
+        public void RemoveInfoadmin(string MaAD)
+        {
+            using (QuanLyThuVienEntities db = new QuanLyThuVienEntities())
+            {
+                ADMIN ad = db.ADMINs.Find(MaAD);
+                
+                db.ADMINs.Remove(ad);
+                db.SaveChanges();
+            }
+        }
     }
 }
