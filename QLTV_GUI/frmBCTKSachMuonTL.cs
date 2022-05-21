@@ -114,5 +114,10 @@ namespace QLTV_GUI
             }
         }
         #endregion
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

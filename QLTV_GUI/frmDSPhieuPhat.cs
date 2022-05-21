@@ -176,6 +176,11 @@ namespace QLTV_GUI
 
         }
 
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //private void btn_Sua_Click(object sender, EventArgs e)
         //{
         //    int flag = 0;

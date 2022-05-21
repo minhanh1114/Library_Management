@@ -19,7 +19,7 @@ namespace QLTV_GUI
     {
         #region Declare
         List<TTDOCGIADTO> listinfoDG = TTDOCGIABUS.Instance.GetListDocGiaInfo().ToList();
-        List<ADMIN> listinfoAd = ADMINBUS.Instance.GetInfoAdmin().ToList();
+        List<ADMIN> listinfoAd = ADMINBUS.Instance.GetInfoAdmin1().ToList();
         List<ACCOUNT> listAccount = new List<ACCOUNT>();
         List<string> listUsername = new List<string>();
         List<string> listemail = new List<string>();
@@ -51,7 +51,7 @@ namespace QLTV_GUI
             catch {
                 IdLast = "";
             }
-            txbMaDocGia.Text = HelpGUI.AutoIncreaseID.Load_AutoIncreaseID("DA",IdLast, 6);
+            txbMaDocGia.Text = HelpGUI.AutoIncreaseID.Load_AutoIncreaseID("DG",IdLast, 6);
         }
         void Load_LoaiDG()
         {

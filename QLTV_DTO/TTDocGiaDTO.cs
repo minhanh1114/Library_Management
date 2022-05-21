@@ -21,4 +21,5 @@ namespace QLTV_DTO
         public string SDT { get; set; }
         public decimal TongNo { get; set; }
     }
+
 }

@@ -9,7 +9,7 @@
         <EntityTypeShape EntityType="QuanLyThuVienModel.ADMIN" Width="1.5" PointX="3.75" PointY="18.875" />
         <EntityTypeShape EntityType="QuanLyThuVienModel.BCTKMUONSACH" Width="1.5" PointX="3.75" PointY="8" />
         <EntityTypeShape EntityType="QuanLyThuVienModel.BCTKTRATRE" Width="1.5" PointX="7.5" PointY="11" />
-        <EntityTypeShape EntityType="QuanLyThuVienModel.CHITIETPHANQUYEN" Width="1.5" PointX="3.75" PointY="16.125" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.CHITIETPHANQUYEN" Width="1.375" PointX="3.75" PointY="16.125" />
         <EntityTypeShape EntityType="QuanLyThuVienModel.CTBCTKMUONSACH" Width="1.5" PointX="6" PointY="3.875" />
         <EntityTypeShape EntityType="QuanLyThuVienModel.CTBCTKTRATRE" Width="1.5" PointX="9.75" PointY="7.75" />
         <EntityTypeShape EntityType="QuanLyThuVienModel.CTPHIEUMUON" Width="1.5" PointX="5.25" PointY="0.75" />

@@ -70,14 +70,15 @@
             // cbbNam
             // 
             this.cbbNam.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cbbNam.Location = new System.Drawing.Point(403, 53);
+            this.cbbNam.Location = new System.Drawing.Point(474, 61);
+            this.cbbNam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbbNam.Name = "cbbNam";
             this.cbbNam.Properties.AllowFocused = false;
             this.cbbNam.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cbbNam.Properties.NullText = "Năm";
             this.cbbNam.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cbbNam.Size = new System.Drawing.Size(70, 20);
+            this.cbbNam.Size = new System.Drawing.Size(81, 23);
             this.cbbNam.StyleController = this.layoutControl1;
             this.cbbNam.TabIndex = 2;
             this.cbbNam.SelectedIndexChanged += new System.EventHandler(this.cbbNam_SelectedIndexChanged);
@@ -91,10 +92,11 @@
             this.layoutControl1.Controls.Add(this.cbbThang);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(716, 298, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(782, 100);
+            this.layoutControl1.Size = new System.Drawing.Size(904, 123);
             this.layoutControl1.TabIndex = 5;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -102,9 +104,10 @@
             // 
             this.btnTaoBaoCao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTaoBaoCao.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTaoBaoCao.ImageOptions.Image")));
-            this.btnTaoBaoCao.Location = new System.Drawing.Point(671, 53);
+            this.btnTaoBaoCao.Location = new System.Drawing.Point(775, 61);
+            this.btnTaoBaoCao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTaoBaoCao.Name = "btnTaoBaoCao";
-            this.btnTaoBaoCao.Size = new System.Drawing.Size(87, 22);
+            this.btnTaoBaoCao.Size = new System.Drawing.Size(105, 27);
             this.btnTaoBaoCao.StyleController = this.layoutControl1;
             this.btnTaoBaoCao.TabIndex = 3;
             this.btnTaoBaoCao.Text = "Tạo báo cáo";
@@ -113,9 +116,10 @@
             // labelControl1
             // 
             this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelControl1.Location = new System.Drawing.Point(385, 53);
+            this.labelControl1.Location = new System.Drawing.Point(454, 61);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(4, 13);
+            this.labelControl1.Size = new System.Drawing.Size(5, 16);
             this.labelControl1.StyleController = this.layoutControl1;
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "/";
@@ -123,7 +127,8 @@
             // cbbThang
             // 
             this.cbbThang.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cbbThang.Location = new System.Drawing.Point(320, 53);
+            this.cbbThang.Location = new System.Drawing.Point(376, 61);
+            this.cbbThang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbbThang.Name = "cbbThang";
             this.cbbThang.Properties.AllowFocused = false;
             this.cbbThang.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -143,7 +148,7 @@
             "12"});
             this.cbbThang.Properties.NullText = "Tháng";
             this.cbbThang.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cbbThang.Size = new System.Drawing.Size(51, 20);
+            this.cbbThang.Size = new System.Drawing.Size(63, 23);
             this.cbbThang.StyleController = this.layoutControl1;
             this.cbbThang.TabIndex = 0;
             this.cbbThang.SelectedIndexChanged += new System.EventHandler(this.cbbThang_SelectedIndexChanged);
@@ -156,7 +161,7 @@
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(782, 100);
+            this.Root.Size = new System.Drawing.Size(904, 123);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -178,15 +183,15 @@
             this.emptySpaceItem2});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(762, 80);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(884, 103);
             this.layoutControlGroup1.Text = "BÁO CÁO THỐNG KÊ TÌNH HÌNH MƯỢN SÁCH THEO THỂ LOẠI";
             // 
             // lo_btnTaoBaoCao
             // 
             this.lo_btnTaoBaoCao.Control = this.btnTaoBaoCao;
-            this.lo_btnTaoBaoCao.Location = new System.Drawing.Point(647, 0);
+            this.lo_btnTaoBaoCao.Location = new System.Drawing.Point(751, 0);
             this.lo_btnTaoBaoCao.Name = "lo_btnTaoBaoCao";
-            this.lo_btnTaoBaoCao.Size = new System.Drawing.Size(91, 27);
+            this.lo_btnTaoBaoCao.Size = new System.Drawing.Size(109, 42);
             this.lo_btnTaoBaoCao.TextSize = new System.Drawing.Size(0, 0);
             this.lo_btnTaoBaoCao.TextVisible = false;
             this.lo_btnTaoBaoCao.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
@@ -194,35 +199,35 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.cbbNam;
-            this.layoutControlItem2.Location = new System.Drawing.Point(379, 0);
+            this.layoutControlItem2.Location = new System.Drawing.Point(450, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(74, 27);
+            this.layoutControlItem2.Size = new System.Drawing.Size(85, 42);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // emptySpaceItem4
             // 
             this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(369, 0);
+            this.emptySpaceItem4.Location = new System.Drawing.Point(439, 0);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(10, 27);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(11, 42);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.labelControl1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(361, 0);
+            this.layoutControlItem3.Location = new System.Drawing.Point(430, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(8, 27);
+            this.layoutControlItem3.Size = new System.Drawing.Size(9, 42);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(351, 0);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(419, 0);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(10, 27);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(11, 42);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem1
@@ -230,18 +235,18 @@
             this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem1.Control = this.cbbThang;
-            this.layoutControlItem1.Location = new System.Drawing.Point(249, 0);
+            this.layoutControlItem1.Location = new System.Drawing.Point(290, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(102, 27);
+            this.layoutControlItem1.Size = new System.Drawing.Size(129, 42);
             this.layoutControlItem1.Text = "Tháng:";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(44, 16);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(59, 21);
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(453, 0);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(535, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(194, 27);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(216, 42);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem2
@@ -249,7 +254,7 @@
             this.emptySpaceItem2.AllowHotTrack = false;
             this.emptySpaceItem2.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(249, 27);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(290, 42);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // gridControl1
@@ -262,15 +267,18 @@
             this.gridControl1.EmbeddedNavigator.Buttons.NextPage.Visible = false;
             this.gridControl1.EmbeddedNavigator.Buttons.PrevPage.Visible = false;
             this.gridControl1.EmbeddedNavigator.Buttons.Remove.Visible = false;
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.EmbeddedNavigator.TextStringFormat = "{0}           of {1}";
-            this.gridControl1.Location = new System.Drawing.Point(0, 100);
+            this.gridControl1.Location = new System.Drawing.Point(0, 123);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(782, 376);
+            this.gridControl1.Size = new System.Drawing.Size(904, 468);
             this.gridControl1.TabIndex = 6;
             this.gridControl1.UseEmbeddedNavigator = true;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
@@ -282,6 +290,7 @@
             this.colTenTheLoai,
             this.colSoLuotMuon,
             this.colTiLe});
+            this.gridView1.DetailHeight = 431;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.ReadOnly = true;
@@ -299,9 +308,11 @@
             this.colTenTheLoai.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.colTenTheLoai.Caption = "Tên Thể Loại";
             this.colTenTheLoai.FieldName = "TenTheLoai";
+            this.colTenTheLoai.MinWidth = 23;
             this.colTenTheLoai.Name = "colTenTheLoai";
             this.colTenTheLoai.Visible = true;
             this.colTenTheLoai.VisibleIndex = 0;
+            this.colTenTheLoai.Width = 87;
             // 
             // colSoLuotMuon
             // 
@@ -313,9 +324,11 @@
             this.colSoLuotMuon.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.colSoLuotMuon.Caption = "Số Lượt Mượn";
             this.colSoLuotMuon.FieldName = "SoLuotMuon";
+            this.colSoLuotMuon.MinWidth = 23;
             this.colSoLuotMuon.Name = "colSoLuotMuon";
             this.colSoLuotMuon.Visible = true;
             this.colSoLuotMuon.VisibleIndex = 1;
+            this.colSoLuotMuon.Width = 87;
             // 
             // colTiLe
             // 
@@ -327,19 +340,22 @@
             this.colTiLe.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.colTiLe.Caption = "Tỉ Lệ";
             this.colTiLe.FieldName = "TiLe";
+            this.colTiLe.MinWidth = 23;
             this.colTiLe.Name = "colTiLe";
             this.colTiLe.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "SoLuotMuon", "Tổng số lượt mượn:         {0}")});
             this.colTiLe.Visible = true;
             this.colTiLe.VisibleIndex = 2;
+            this.colTiLe.Width = 87;
             // 
             // frmBCTKSachMuonTL
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 476);
+            this.ClientSize = new System.Drawing.Size(904, 591);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.layoutControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmBCTKSachMuonTL";
             this.Text = "Báo Cáo Thống Kê Sách Mượn Theo Thể Loại";
             this.Load += new System.EventHandler(this.frmBCTKSachMuonTL_Load);

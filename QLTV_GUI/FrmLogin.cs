@@ -126,6 +126,7 @@ namespace QLTV_GUI
                     listaccount.Clear();
                     txbUsername.Select();
                     Hide();
+                    // hiển thị giao diện load dữ dev
                     SplashScreenManager.ShowDefaultSplashScreen("Đang mở...", "Phần Mềm Quản Lý Thư Viện");
                     Thread.Sleep(500);
                     FrmMain frmMain = new FrmMain(this, IDUser);
@@ -145,6 +146,11 @@ namespace QLTV_GUI
         private void txbPassword_EditValueChanged(object sender, EventArgs e)
         {
             //HelpGUI.ErrorProvider.Event_ErrorProvider(dxErrorProvider1, txbPassword, HelpGUI.KiemTraDieuKien.isPassword(txbPassword.Text), "Password không hợp lệ!");
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

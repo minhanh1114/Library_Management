@@ -10,7 +10,6 @@
 namespace QLTV_DTO
 {
     using System;
-    using System.Configuration;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
@@ -25,10 +24,7 @@ namespace QLTV_DTO
         {
             throw new UnintentionalCodeFirstException();
         }
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["BloggingDatabase"].ConnectionString);
-        //}
+    
         public virtual DbSet<ACCOUNT> ACCOUNTs { get; set; }
         public virtual DbSet<ADMIN> ADMINs { get; set; }
         public virtual DbSet<BCTKMUONSACH> BCTKMUONSACHes { get; set; }

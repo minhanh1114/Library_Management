@@ -105,5 +105,10 @@ namespace QLTV_GUI
             else lo_btnTaoBaoCao.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
         }
         #endregion
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -67,8 +67,7 @@ namespace QLTV_GUI
         void LoadSachInfo()
         {
             List<SACH> list = QLTV_BUS.SACHBUS.Instance.GetListSachInfo();
-            //gridControl.DataSource = list.ToList();
-            //bindingSource1.DataSource = list.ToList();
+         
             ListBDSach.DataSource = list.ToList();
             gridControl1.DataSource = ListBDSach;
         }

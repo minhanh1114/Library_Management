@@ -49,7 +49,8 @@ namespace QLTV_GUI
         #region Methods
         void LoadAdminInfo()
         {
-            listad = ADMINBUS.Instance.GetInfoAdmin().ToList();
+            listad = ADMINBUS.Instance.GetInfoAdmin1().ToList();
+
         }
         void LoadDocGiaInfo()
         {

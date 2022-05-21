@@ -48,7 +48,8 @@ namespace QLTV_GUI
         {
             if (account.TypeOfAccount == "USER")
                 subitemAccount.Caption = DOCGIABUS.Instance.GetInfoDocGia(account.IDAccount).ToList()[0].HoTen.ToString();
-            else subitemAccount.Caption = ADMINBUS.Instance.GetInfoAdmin(account.IDAccount).ToList()[0].NameAdmin.ToString();
+            else 
+                subitemAccount.Caption = ADMINBUS.Instance.GetInfoAdmin1(idaccount).ToList()[0].NameAdmin.ToString();
             toolTipItem.Text = subitemAccount.Caption;
             superToolTip.Items.Add(toolTipItem);
             this.bsitem_Account.SuperTip = superToolTip;
@@ -71,6 +72,7 @@ namespace QLTV_GUI
             tab_baocao.Visible = true;
             tab_quydinh.Visible = true;
         }
+        // kiểm tra phân quyền theo username
         void KiemTraPermisson()
         {
             account = ACCOUNTBUS.Instance.GetInfoAccount(idaccount).ToList()[0];

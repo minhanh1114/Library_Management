@@ -70,6 +70,7 @@
     <Compile Include="CHITIETPHIEUMUONDTO.cs" />
     <Compile Include="CHITIETPHIEUTRADTO.cs" />
     <Compile Include="CHITIETSACHDTO.cs" />
+    <Compile Include="TTADMINDTO.cs" />
     <Compile Include="CTBCTKMUONSACH.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

@@ -18,9 +18,13 @@ namespace QLTV_BUS
             set => instance = value;
         }
         private ADMINBUS() { }
-        public List<ADMIN> GetInfoAdmin(string idaccount="")
+        public List<TTADMINDTO> GetInfoAdmin()
         {
-            return ADMINDAO.Instance.GetInfoAdmin(idaccount);
+            return ADMINDAO.Instance.GetInfoAdmin();
+        }
+        public List<ADMIN> GetInfoAdmin1(string iDAccount="")
+        {
+            return ADMINDAO.Instance.GetInfoAdmin1(iDAccount);
         }
         public void updateInfoadmin(string MaAD, string idtaikhoan, string TenAD, string DiaChi, string email, DateTime NgaySinh, string phone)
         {

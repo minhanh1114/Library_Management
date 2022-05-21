@@ -63,10 +63,13 @@
             this.btn_Logout = new DevExpress.XtraBars.BarButtonItem();
             this.skinDropDownButtonItem1 = new DevExpress.XtraBars.SkinDropDownButtonItem();
             this.skinPaletteDropDownButtonItem1 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.tab_Hethong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rbpageAccount = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpageQLadmin = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpageSkins = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.tab_docgia = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rbpageReaders = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpageLoaiDocGia = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -93,8 +96,6 @@
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.workspaceManager1 = new DevExpress.Utils.WorkspaceManager(this.components);
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
@@ -144,10 +145,11 @@
             this.skinDropDownButtonItem1,
             this.skinPaletteDropDownButtonItem1,
             this.skinBarSubItem1,
-            this.barButtonItem1});
+            this.barButtonItem1,
+            this.skinRibbonGalleryBarItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ribbonControl1.MaxItemId = 14;
+            this.ribbonControl1.MaxItemId = 15;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageHeaderItemLinks.Add(this.bsitem_Account);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -166,7 +168,7 @@
             this.repositoryItemPictureEdit3,
             this.repositoryItemTextEdit1,
             this.repositoryItemHypertextLabel1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1154, 193);
+            this.ribbonControl1.Size = new System.Drawing.Size(1146, 181);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // popupMenu1
@@ -429,8 +431,25 @@
             // 
             // skinPaletteDropDownButtonItem1
             // 
+            this.skinPaletteDropDownButtonItem1.Enabled = false;
             this.skinPaletteDropDownButtonItem1.Id = 11;
             this.skinPaletteDropDownButtonItem1.Name = "skinPaletteDropDownButtonItem1";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "NÚT BẤM 1";
+            this.barButtonItem1.Id = 13;
+            this.barButtonItem1.ImageOptions.Image = global::QLTV_GUI.Properties.Resources.admin_icon;
+            this.barButtonItem1.ImageOptions.LargeImage = global::QLTV_GUI.Properties.Resources.admin_icon;
+            this.barButtonItem1.LargeWidth = 80;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
+            // skinRibbonGalleryBarItem1
+            // 
+            this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
+            this.skinRibbonGalleryBarItem1.Id = 14;
+            this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
             // tab_Hethong
             // 
@@ -460,6 +479,12 @@
             this.rbpageSkins.ItemLinks.Add(this.btnSkins);
             this.rbpageSkins.Name = "rbpageSkins";
             this.rbpageSkins.Text = "Skins";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
             // tab_docgia
             // 
@@ -613,11 +638,11 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 647);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 650);
             this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1154, 30);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1146, 27);
             // 
             // xtraTabbedMdiManager1
             // 
@@ -631,28 +656,12 @@
             this.workspaceManager1.TargetControl = this;
             this.workspaceManager1.TransitionType = pushTransition1;
             // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "QUẢN LÍ 2";
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "NÚT BẤM 1";
-            this.barButtonItem1.Id = 13;
-            this.barButtonItem1.ImageOptions.Image = global::QLTV_GUI.Properties.Resources.admin_icon;
-            this.barButtonItem1.ImageOptions.LargeImage = global::QLTV_GUI.Properties.Resources.admin_icon;
-            this.barButtonItem1.LargeWidth = 80;
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
-            // 
             // FrmMain
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1154, 677);
+            this.ClientSize = new System.Drawing.Size(1146, 677);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
             this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("FrmMain.IconOptions.Icon")));
@@ -741,6 +750,7 @@
         private DevExpress.XtraBars.SkinPaletteDropDownButtonItem skinPaletteDropDownButtonItem1;
         private DevExpress.XtraBars.SkinBarSubItem skinBarSubItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
     }
 }

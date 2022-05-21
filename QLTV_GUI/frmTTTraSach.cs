@@ -48,6 +48,8 @@ namespace QLTV_GUI
             glued_MaPhieuMuon.Properties.DisplayMember = "MaPhieuMS";
             glued_MaPhieuMuon.Properties.ValueMember = "MaPhieuMS";
         }
+
+        // vào frame kiểm tra all user và update mượn quá hạn vào bảng ctphieumuon
         void Update_TinhTrangMuon()
         {
             listpm = CHITIETPHIEUMUONBUS.Instance.GetListPhieuMuon().Where(x => x.TinhTrangMuon == "Còn hạn").ToList();
@@ -106,7 +108,7 @@ namespace QLTV_GUI
             Update_TinhTrangMuon();
             LoadData();
         }
-
+        // load dữ liệu khi chọn mã phiếu mượn
         private void glued_MaPhieuMuon_EditValueChanged(object sender, EventArgs e)
         {
             decimal TienPhatKiNay= 0;
@@ -122,6 +124,8 @@ namespace QLTV_GUI
                     TienPhatKiNay += Convert.ToDecimal(list[i].TienPhat);
                 }
                 txt_TienPhatKiNay.EditValue = TienPhatKiNay;
+
+                // lấy dữ liệu hiển thị tổng nợ
                 List<DOCGIA> listdg = DOCGIABUS.Instance.GetInfoDocGia();
                string madg= listpt.Where(x => x.MaPhieuMS == glued_MaPhieuMuon.EditValue.ToString()).Select(x => x).ToList()[0].MaDocGia;
                 txt_TongNo.EditValue = listdg.Where(x => x.MaDocGia == madg).Select(x=>x).ToList()[0].TongNo;

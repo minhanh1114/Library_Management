@@ -148,7 +148,7 @@ namespace QLTV_GUI
         #region Event_Load
         private void frmTTCaNhan_Load(object sender, EventArgs e)
         {
-            listad = ADMINBUS.Instance.GetInfoAdmin().ToList();
+            listad = ADMINBUS.Instance.GetInfoAdmin1().ToList();
             listdg = QLTV_BUS.TTDOCGIABUS.Instance.GetListDocGiaInfo();
             ListEmail();
             format_TT();
@@ -177,5 +177,10 @@ namespace QLTV_GUI
             else dxErrorProvider1.SetError(txbMail, null);
         }
         #endregion
+
+        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

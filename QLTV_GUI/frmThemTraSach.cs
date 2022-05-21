@@ -157,6 +157,7 @@ namespace QLTV_GUI
             }
         }
 
+        //lưu
         private void btn_Apply_Click(object sender, EventArgs e)
         { bandedGridView1.MoveFirst();
             decimal TienPhat = 0;
@@ -165,12 +166,19 @@ namespace QLTV_GUI
                 TienPhat = 0;
                 if (DateTime.Now.Subtract(item.HanTra).Days > 0)
                 {
-                    TienPhat = (decimal)DateTime.Now.Subtract(item.HanTra).Days * THAMSOBUS.Instance.GetDSQuiDinh()[0].TPTraTreMotNgay;
+                   // thêm tiền phạt với công thức số ngày trễ x số tiền quy định    
+                    TienPhat = (decimal)DateTime.Now.Subtract(item.HanTra).Days * THAMSOBUS.Instance.GetDSQuiDinh()[0].TPTraTreMotNgay;      
+                    if (TienPhat<0)
+                    {
+                        TienPhat = 0;
+                    }  
+                    
                 }
-               
-                CHITIETPHIEUTRABUS.Instance.AddPhieuTra(item.MaPhieuMS, item.MaSach, new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day), DateTime.Now.Subtract(item.NgayMuon).Days, (decimal)DateTime.Now.Subtract(item.HanTra).Days * THAMSOBUS.Instance.GetDSQuiDinh()[0].TPTraTreMotNgay, item.TinhTrangTraSach);
+               // up csdl
+                CHITIETPHIEUTRABUS.Instance.AddPhieuTra(item.MaPhieuMS, item.MaSach, new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day), DateTime.Now.Subtract(item.NgayMuon).Days, TienPhat, item.TinhTrangTraSach);
                 DOCGIABUS.Instance.UpdateTongNoDG(item.MaDocGia, TienPhat);
                 CTPHIEUMUONBUS.Instance.UpdateTinhTrangMuon(item.MaPhieuMS, item.MaSach, "Đã trả");
+               // checked sách
                 if (item.TinhTrangTraSach == "Hỏng")
                 { SACHBUS.Instance.UpdateTinhtrangSach(item.MaSach, "TT003"); }
                 if (item.TinhTrangTraSach == "Mất")

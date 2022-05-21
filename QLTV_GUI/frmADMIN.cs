@@ -17,7 +17,7 @@ namespace QLTV_GUI
 {
     public partial class frmADMIN : DevExpress.XtraEditors.XtraForm
     {
-        List<ADMIN> listad = new List<ADMIN>();
+        List<TTADMINDTO> listad = new List<TTADMINDTO>();
         BindingSource ListBDadmin = new BindingSource();
 
         public GridColumn IDAdmin { get; private set; }
@@ -55,6 +55,7 @@ namespace QLTV_GUI
         private void frmADMIN_Load(object sender, EventArgs e)
         {
             textBox1.ReadOnly = true;
+           
             Loadadmingirl();
             Binding_DocGia();
         }
@@ -82,7 +83,8 @@ namespace QLTV_GUI
                 dateNgaySinh.DataBindings.Add("EditValue", ListBDadmin, "Birthday", true, DataSourceUpdateMode.Never);
                 textBox6.DataBindings.Add("Text", ListBDadmin, "NumberPhone", true, DataSourceUpdateMode.Never);
                 textBox7.DataBindings.Add("Text", ListBDadmin, "Address", true, DataSourceUpdateMode.Never);
-                
+                textmk.DataBindings.Add("Text", ListBDadmin, "PasswordAccount", true, DataSourceUpdateMode.Never);
+
 
             }
             catch
@@ -102,7 +104,7 @@ namespace QLTV_GUI
                     //(MaAD, idtaikhoan, TenAD, DiaChi, email, NgaySinh, phone);
 
                     QLTV_BUS.ADMINBUS.Instance.updateInfoadmin(idadmin, textBox4.Text, textBox2.Text, textBox7.Text, textBox3.Text,Convert.ToDateTime(dateNgaySinh.EditValue),textBox6.Text);
-                    //QLTV_BUS.ACCOUNTBUS.Instance.UpdateInfoAccount(txbUserName.Text, txbPassword.Text);
+                    QLTV_BUS.ACCOUNTBUS.Instance.UpdateInfoAccount(textBox4.Text, textmk.Text);
                     XtraMessageBox.Show("Thay đổi đã lưu thành công!", "Thông Báo"+ idadmin, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //btnLamMoi_ItemClick(sender, e as DevExpress.XtraBars.ItemClickEventArgs);
                     // gridControl.Focus();
@@ -121,6 +123,8 @@ namespace QLTV_GUI
             btnhuy.Visible = true;
             
 
+
+
         }
 
         private void btnhuy_Click(object sender, EventArgs e)
@@ -133,6 +137,11 @@ namespace QLTV_GUI
         {
             Loadadmingirl();
             textBox1.ReadOnly = true;
+        }
+
+        private void simpleButton1_Click_1(object sender, EventArgs e)
+        {
+            textmk.Text = "12345678";
         }
     }
 }
